@@ -1,6 +1,7 @@
 <?php declare(strict_types=1);
 
 session_start( [ 
+  'name' => '__Secure-PHPSESSID',
 
   'cookie_lifetime' => 0,
   'cookie_path' => '/',
