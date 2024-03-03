@@ -1,7 +1,7 @@
 # php-secure-session
 Test project to test secure cookie sessions.
 Note: in both cases the PHPSESSID is transmitted in none secure HTTP:// connection. But in the second case the cookie is __not__ included in the next request where in the first case the session cookie is inluded.
-
+To test this make sure you disable settings like HTTPS-only on your browser or disable auto redirect to HTTP to HTTPS on your server. Like forinstance here [http://php-secure-session.go321.eu](http://php-secure-session.go321.eu/index2.php)
 ## index.php
 The none secured local server (Apache 2.4.54.2 / PHP 8.3.3 / Windows 10) responds with:
 ```
@@ -46,4 +46,3 @@ Server: Windows 10
 Apache: 2.4.54.2
 PHP: 8.3.3
 php.ini all defaults;
-
